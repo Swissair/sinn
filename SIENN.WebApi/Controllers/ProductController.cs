@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SIENN.DataConracts;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using SIENN.DataContracts;
 using SIENN.Services.Contracts;
 using System;
 using System.Collections.Generic;
@@ -13,17 +14,22 @@ namespace SIENN.WebApi.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly IMapper _mapper;
 
-        public ProductController(IProductService productService)
+        public ProductController(
+            IProductService productService,
+            IMapper mapper)
         {
             _productService = productService;
+            this._mapper = mapper;
         }
 
         [HttpPost]
         public GetAvailableProductsResponse GetAvailableProducts(GetAvailableProductsRequest request)
         {
-            var result = _productService.GetAvailableProducts(request);
-            return result;
+            var result = _productService.GetAvailableProducts(request.PageNumber, request.PageSize);
+            var products = _mapper.Map<List<SIENN.DataContracts.Product>>(result);
+            return new GetAvailableProductsResponse() { Products = products };
         }
     }
 }

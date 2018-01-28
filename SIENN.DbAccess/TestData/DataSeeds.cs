@@ -28,6 +28,13 @@ namespace SIENN.DbAccess.TestData
                     Code = "Kg"
                 };
 
+                var unitLiter = new Unit
+                {
+                    Name = "Litres",
+                    Description = "Litres",
+                    Code = "L"
+                };
+
                 context.Unit.AddRange(new List<Unit> { unitPiece, unitKilogram });
                 context.SaveChanges();
             }
@@ -90,6 +97,38 @@ namespace SIENN.DbAccess.TestData
                 };
                 categories.Add(shirts);
 
+                var cars = new Category
+                {
+                    Name = "Cars",
+                    Description = "Cars",
+                    Code = "Cars"
+                };
+                categories.Add(cars);
+
+                var consoles = new Category
+                {
+                    Name = "Consoles",
+                    Description = "Consoles",
+                    Code = "Consoles"
+                };
+                categories.Add(consoles);
+
+                var food = new Category
+                {
+                    Name = "Food",
+                    Description = "Food",
+                    Code = "Food"
+                };
+                categories.Add(food);
+
+                var liquids = new Category
+                {
+                    Name = "Liquids",
+                    Description = "Liquids",
+                    Code = "Liquids"
+                };
+                categories.Add(food);
+
                 context.Category.AddRange(categories);
                 context.SaveChanges();
             }
@@ -101,6 +140,11 @@ namespace SIENN.DbAccess.TestData
                 var garmentCategory = context.Category.First(c => c.Name == "Garment");
                 var shirtsCategory = context.Category.First(c => c.Name == "Shirts");
 
+                var carsCategory = context.Category.First(c => c.Name == "Cars");
+                var consolesCategory = context.Category.First(c => c.Name == "Consoles");
+                var foodCategory = context.Category.First(c => c.Name == "Food");
+                var ligquidsCategory = context.Category.First(c => c.Name == "Liquids");
+
 
                 var products = new List<Product>();
 
@@ -110,7 +154,6 @@ namespace SIENN.DbAccess.TestData
                     Description = "Modern tv",
                     DeliveryDate = DateTime.Now.AddDays(3),
                     IsAvailable = true,
-
                 };
 
                 samsungTv.ProductCategories = new List<ProductCategory>
@@ -119,9 +162,28 @@ namespace SIENN.DbAccess.TestData
                     new ProductCategory { Category = householdGoodsCategory, Product = samsungTv}
                 };
 
+                products.Add(samsungTv);
+
+
                 context.Product.AddRange(products);
                 context.SaveChanges();
             }
+        }
+
+        // Could use builder pattern with fluent API
+        private static Product GetProduct(string name, decimal price, bool isAvailable = true, DateTime? nextDeliveryDate = null)
+        {
+            var product = new Product()
+            {
+                Name = name,
+                Description = name + " description",
+                Code = name.ToUpper(),
+                IsAvailable = isAvailable,
+                DeliveryDate = nextDeliveryDate,
+                Price = price
+            };
+
+            return product;
         }
     }
 }

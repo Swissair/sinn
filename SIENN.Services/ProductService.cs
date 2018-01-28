@@ -1,9 +1,10 @@
-﻿using SIENN.DataConracts;
-using SIENN.DbAccess.Contracts;
+﻿using SIENN.DbAccess.Contracts;
+using SIENN.DbAccess.Models;
 using SIENN.DbAccess.Repositories;
 using SIENN.Services.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SIENN.Services
@@ -17,11 +18,10 @@ namespace SIENN.Services
             this._productRepository = productRepository;
         }
 
-        public GetAvailableProductsResponse GetAvailableProducts(GetAvailableProductsRequest request)
+        public List<Product> GetAvailableProducts(int pageNumber, int pageSize)
         {
-            var products = _productRepository.GetAvailableProducts(request.PageNumber, request.PageSize);
-
-            return new GetAvailableProductsResponse { Products = new List<Product> { new Product { Description = "Tada" } } };
+            var products = _productRepository.GetAvailableProducts(pageNumber, pageSize);
+            return products;
         }
     }
 }

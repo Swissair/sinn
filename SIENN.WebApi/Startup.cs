@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,6 +35,7 @@ namespace SIENN.WebApi
                 });
             });
 
+            services.AddAutoMapper();
             services.AddMvc();
 
             var connection = "Server=(localdb)\\mssqllocaldb;Database=SiennLocalDb;Trusted_Connection=True;MultipleActiveResultSets=true";

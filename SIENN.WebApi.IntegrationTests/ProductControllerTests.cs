@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using NUnit.Framework;
-using SIENN.DataConracts;
+using SIENN.DataContracts;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;

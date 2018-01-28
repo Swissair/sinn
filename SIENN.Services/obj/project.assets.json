@@ -727,16 +727,6 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "SIENN.DataContracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/SIENN.DataContracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SIENN.DataContracts.dll": {}
-        }
-      },
       "SIENN.DbAccess/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3010,11 +3000,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "SIENN.DataContracts/1.0.0": {
-      "type": "project",
-      "path": "../SIENN.DataContracts/SIENN.DataContracts.csproj",
-      "msbuildProject": "../SIENN.DataContracts/SIENN.DataContracts.csproj"
-    },
     "SIENN.DbAccess/1.0.0": {
       "type": "project",
       "path": "../SIENN.DbAccess/SIENN.DbAccess.csproj",
@@ -3024,7 +3009,6 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.1",
-      "SIENN.DataContracts >= 1.0.0",
       "SIENN.DbAccess >= 1.0.0"
     ]
   },
@@ -3061,9 +3045,6 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DataContracts\\SIENN.DataContracts.csproj": {
-              "projectPath": "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DataContracts\\SIENN.DataContracts.csproj"
-            },
             "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DbAccess\\SIENN.DbAccess.csproj": {
               "projectPath": "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DbAccess\\SIENN.DbAccess.csproj"
             }

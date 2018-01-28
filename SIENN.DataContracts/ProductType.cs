@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SIENN.DataConracts
+namespace SIENN.DataContracts
 {
     public partial class ProductType
     {
