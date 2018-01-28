@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SIENN.DbAccess.Framework;
 using SIENN.DbAccess.Models;
+using SIENN.DbAccess.TestData;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace SIENN.WebApi
@@ -30,7 +32,8 @@ namespace SIENN.WebApi
 
             services.AddMvc();
 
-            var connection = @"Server=(LocalDB)\MSSQLLocalDB;Initial Catalog=C:\Users\Piotr\Documents\SIENNTestDb.mdf;Integrated Security=True;Connect Timeout=30;";
+            // var connection = @"Server=(LocalDB)\MSSQLLocalDB;Initial Catalog=C:\Users\Piotr\Documents\SIENNTestDb.mdf;Integrated Security=True;Connect Timeout=30;";
+            var connection = "Server=(localdb)\\mssqllocaldb;Database=SiennLocalDb;Trusted_Connection=True;MultipleActiveResultSets=true";
             services.AddDbContext<SiennDbContext>(options => options.UseSqlServer(connection));
         }
 
@@ -48,6 +51,15 @@ namespace SIENN.WebApi
             });
 
             app.UseMvc();
+
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                if (!serviceScope.ServiceProvider.GetService<SiennDbContext>().AllMigrationsApplied())
+                {
+                    serviceScope.ServiceProvider.GetService<SiennDbContext>().Database.Migrate();
+                    serviceScope.ServiceProvider.GetService<SiennDbContext>().SeedData();
+                }
+            }
         }
     }
 }

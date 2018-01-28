@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using SIENN.DbAccess.Models;
 
-namespace SIENN.DbAccess.Models
+namespace SIENN.DbAccess.Framework
 {
     public partial class SiennDbContext : DbContext
     {
