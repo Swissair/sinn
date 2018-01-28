@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace SIENN.DbAccess.Models
+namespace SIENN.WebApi.Contracts
 {
     public class Category
     {
         public Category()
         {
-            ProductCategories = new HashSet<ProductCategory>();
+            Products = new List<Product>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
         public string Description { get; set; }
-        public ICollection<ProductCategory> ProductCategories { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

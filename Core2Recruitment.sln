@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.DbAccess", "SIENN.DbAccess\SIENN.DbAccess.csproj", "{511A3059-5C43-4767-BE20-8781E87BAAD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.DbAccess", "SIENN.DbAccess\SIENN.DbAccess.csproj", "{511A3059-5C43-4767-BE20-8781E87BAAD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.Services", "SIENN.Services\SIENN.Services.csproj", "{1B5848CF-2A71-45B8-9877-6D30B844AE3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.Services", "SIENN.Services\SIENN.Services.csproj", "{1B5848CF-2A71-45B8-9877-6D30B844AE3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.WebApi", "SIENN.WebApi\SIENN.WebApi.csproj", "{369B5334-A06E-4766-941F-3043B62DC1D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.WebApi", "SIENN.WebApi\SIENN.WebApi.csproj", "{369B5334-A06E-4766-941F-3043B62DC1D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.WebApi.IntegrationTests", "SIENN.WebApi.IntegrationTests\SIENN.WebApi.IntegrationTests.csproj", "{8C7A46C0-7FEC-49F9-9F80-61516E20F241}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{369B5334-A06E-4766-941F-3043B62DC1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369B5334-A06E-4766-941F-3043B62DC1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369B5334-A06E-4766-941F-3043B62DC1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
