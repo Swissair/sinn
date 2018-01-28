@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace SIENN.DbAccess.Repositories
+namespace SIENN.DbAccess.Contracts
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.Services", "SIENN.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.WebApi", "SIENN.WebApi\SIENN.WebApi.csproj", "{369B5334-A06E-4766-941F-3043B62DC1D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.WebApi.IntegrationTests", "SIENN.WebApi.IntegrationTests\SIENN.WebApi.IntegrationTests.csproj", "{8C7A46C0-7FEC-49F9-9F80-61516E20F241}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIENN.WebApi.IntegrationTests", "SIENN.WebApi.IntegrationTests\SIENN.WebApi.IntegrationTests.csproj", "{8C7A46C0-7FEC-49F9-9F80-61516E20F241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIENN.DataContracts", "SIENN.DataContracts\SIENN.DataContracts.csproj", "{2C849885-FA2B-4194-8B41-5F82882B54B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7A46C0-7FEC-49F9-9F80-61516E20F241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C849885-FA2B-4194-8B41-5F82882B54B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C849885-FA2B-4194-8B41-5F82882B54B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C849885-FA2B-4194-8B41-5F82882B54B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C849885-FA2B-4194-8B41-5F82882B54B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

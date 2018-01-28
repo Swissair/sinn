@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SIENN.DbAccess.Contracts;
+using SIENN.DbAccess.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,9 @@ namespace SIENN.DbAccess.Repositories
 {
     public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        protected GenericRepository(DbContext context)
+        protected GenericRepository(SiennDbContext context)
         {
-            _context = context;
+            Context = context;
             _entities = context.Set<TEntity>();
         }
 
@@ -55,6 +57,6 @@ namespace SIENN.DbAccess.Repositories
         }
 
         private DbSet<TEntity> _entities;
-        private DbContext _context;
+        protected SiennDbContext Context { get; set; }
     }
 }

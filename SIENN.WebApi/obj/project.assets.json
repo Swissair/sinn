@@ -4810,6 +4810,16 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "SIENN.DataContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SIENN.DataContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIENN.DataContracts.dll": {}
+        }
+      },
       "SIENN.DbAccess/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4828,6 +4838,10 @@
       "SIENN.Services/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SIENN.DataContracts": "1.0.0",
+          "SIENN.DbAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/SIENN.Services.dll": {}
         },
@@ -12663,6 +12677,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "SIENN.DataContracts/1.0.0": {
+      "type": "project",
+      "path": "../SIENN.DataContracts/SIENN.DataContracts.csproj",
+      "msbuildProject": "../SIENN.DataContracts/SIENN.DataContracts.csproj"
     },
     "SIENN.DbAccess/1.0.0": {
       "type": "project",

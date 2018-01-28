@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SIENN.DataContracts\SIENN.DataContracts.csproj" />
+    <ProjectReference Include="..\SIENN.DbAccess\SIENN.DbAccess.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using NUnit.Framework;
-using SIENN.WebApi.Contracts;
+using SIENN.DataConracts;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -27,7 +27,9 @@ namespace SIENN.WebApi.IntegrationTests
 
             var responseString = await response.Content.ReadAsStringAsync();
 
-            Assert.AreEqual("SIENN Poland", responseString);
+            var products = JsonConvert.DeserializeObject<GetAvailableProductsResponse>(responseString);
+
+            Assert.AreEqual(1, products.Products.Count);
         }
     }
 }

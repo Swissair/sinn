@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SIENN.DataContracts\SIENN.DataContracts.csproj" />
+    <ProjectReference Include="..\SIENN.DbAccess\SIENN.DbAccess.csproj" />
+    <ProjectReference Include="..\SIENN.Services\SIENN.Services.csproj" />
     <ProjectReference Include="..\SIENN.WebApi\SIENN.WebApi.csproj" />
   </ItemGroup>
 

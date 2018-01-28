@@ -3,9 +3,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SIENN.DbAccess.Contracts;
 using SIENN.DbAccess.Framework;
 using SIENN.DbAccess.Models;
+using SIENN.DbAccess.Repositories;
 using SIENN.DbAccess.TestData;
+using SIENN.Services;
+using SIENN.Services.Contracts;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace SIENN.WebApi
@@ -32,9 +36,10 @@ namespace SIENN.WebApi
 
             services.AddMvc();
 
-            // var connection = @"Server=(LocalDB)\MSSQLLocalDB;Initial Catalog=C:\Users\Piotr\Documents\SIENNTestDb.mdf;Integrated Security=True;Connect Timeout=30;";
             var connection = "Server=(localdb)\\mssqllocaldb;Database=SiennLocalDb;Trusted_Connection=True;MultipleActiveResultSets=true";
             services.AddDbContext<SiennDbContext>(options => options.UseSqlServer(connection));
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

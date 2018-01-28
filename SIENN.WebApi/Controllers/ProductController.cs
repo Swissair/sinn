@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SIENN.WebApi.Contracts;
+using SIENN.DataConracts;
+using SIENN.Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,18 @@ namespace SIENN.WebApi.Controllers
     [Route("api/[controller]/[action]")]
     public class ProductController : Controller
     {
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         [HttpPost]
         public GetAvailableProductsResponse GetAvailableProducts(GetAvailableProductsRequest request)
         {
-            return new GetAvailableProductsResponse
-            {
-                Products = new List<Product>
-                {
-                    new Product{ Id = 1, Description = "Philips tv"}
-                }
-            };
+            var result = _productService.GetAvailableProducts(request);
+            return result;
         }
     }
 }

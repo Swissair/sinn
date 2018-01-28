@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SIENN.WebApi.Contracts
+namespace SIENN.DataConracts
 {
     public partial class Unit
     {

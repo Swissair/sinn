@@ -20,3 +20,5 @@ D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d42
 D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.WebApi.IntegrationTests\bin\Debug\netcoreapp2.0\SIENN.WebApi.pdb
 D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.WebApi.IntegrationTests\bin\Debug\netcoreapp2.0\SIENN.DbAccess.pdb
 D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.WebApi.IntegrationTests\bin\Debug\netcoreapp2.0\SIENN.Services.pdb
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.WebApi.IntegrationTests\bin\Debug\netcoreapp2.0\SIENN.DataContracts.dll
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.WebApi.IntegrationTests\bin\Debug\netcoreapp2.0\SIENN.DataContracts.pdb
