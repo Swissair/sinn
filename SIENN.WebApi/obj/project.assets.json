@@ -4809,6 +4809,31 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "SIENN.DbAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/SIENN.DbAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIENN.DbAccess.dll": {}
+        }
+      },
+      "SIENN.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SIENN.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIENN.Services.dll": {}
+        }
       }
     }
   },
@@ -12638,12 +12663,24 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "SIENN.DbAccess/1.0.0": {
+      "type": "project",
+      "path": "../SIENN.DbAccess/SIENN.DbAccess.csproj",
+      "msbuildProject": "../SIENN.DbAccess/SIENN.DbAccess.csproj"
+    },
+    "SIENN.Services/1.0.0": {
+      "type": "project",
+      "path": "../SIENN.Services/SIENN.Services.csproj",
+      "msbuildProject": "../SIENN.Services/SIENN.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
+      "SIENN.DbAccess >= 1.0.0",
+      "SIENN.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 1.1.0"
     ]
   },
@@ -12679,7 +12716,14 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.Services\\SIENN.Services.csproj": {
+              "projectPath": "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.Services\\SIENN.Services.csproj"
+            },
+            "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DbAccess\\SIENN.DbAccess.csproj": {
+              "projectPath": "D:\\Dev\\sienn\\Answer\\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\\SIENN.DbAccess\\SIENN.DbAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

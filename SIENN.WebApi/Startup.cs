@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SIENN.DbAccess.Models;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace SIENN.WebApi
@@ -27,6 +29,9 @@ namespace SIENN.WebApi
             });
 
             services.AddMvc();
+
+            var connection = @"Server=(LocalDB)\MSSQLLocalDB;Initial Catalog=C:\Users\Piotr\Documents\SIENNTestDb.mdf;Integrated Security=True;Connect Timeout=30;";
+            services.AddDbContext<SiennDbContext>(options => options.UseSqlServer(connection));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
