@@ -1,0 +1,9 @@
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\bin\Debug\netstandard2.0\SIENN.Services.deps.json
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\bin\Debug\netstandard2.0\SIENN.Services.dll
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\bin\Debug\netstandard2.0\SIENN.Services.pdb
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.csprojResolveAssemblyReference.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.csproj.CoreCompileInputs.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.AssemblyInfoInputs.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.AssemblyInfo.cs
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.dll
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.Services\obj\Debug\netstandard2.0\SIENN.Services.pdb

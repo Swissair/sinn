@@ -1,0 +1,9 @@
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\bin\Debug\netstandard2.0\SIENN.DbAccess.deps.json
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\bin\Debug\netstandard2.0\SIENN.DbAccess.dll
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\bin\Debug\netstandard2.0\SIENN.DbAccess.pdb
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.csprojResolveAssemblyReference.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.csproj.CoreCompileInputs.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.AssemblyInfoInputs.cache
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.AssemblyInfo.cs
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.dll
+D:\Dev\sienn\Answer\Core2Recruitment-master-fadc1d35b0bfaa70f0a39418f7b16e974d422af1\SIENN.DbAccess\obj\Debug\netstandard2.0\SIENN.DbAccess.pdb
